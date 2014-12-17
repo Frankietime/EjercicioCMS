@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+</head>
+<body>
+	
+ 	<h1>Javascript</h1>
+
+ 	<h2>implementación sencilla</h2>
+
+
+
+ 	<h3>ventana alert()</h3>
+ 		<p><a href="#" onclick="alert('Texto informativo')">probar ventana alert()</a></p>
+
+ 	<h3>ventana prompt()</h3>
+ 		<p><a href="#" onclick="prompt('Ingrese su nombre')">probar ventana prompt()</a></p>
+
+ 	<h3>ventana confirm()</h3> 
+ 		<p><a href="#" onclick="confirm('ESTA SEGURO??')">probar ventana confirm()</a></p>
+
+	<hr />
+	
+	
+	<h2>implementación con retorno desde una función</h2>
+	
+	<p><a href="http://www.google.com"> visitar google</a></p>
+	<p><a href="http://www.google.com" onclick="return false"> visitar google</a></p>
+	<p><a href="http://www.google.com" onclick="return confirm('desea salir de este sitio e ir a google?')"> visitar google</a></p>
+
+	<br />
+	<form action="no-existe.php" method="post" onsubmit="return funcionDePrueba()">
+		<input type="submit" value="enviar formulario">
+	</form>
+	
+	<script type="text/javascript">
+	function funcionDePrueba(){
+		var mensaje = '¿Desea redirigir al buscador Google?';
+		return confirm(mensaje);
+	}
+	</script>	
+
+
+</body>
+</html>

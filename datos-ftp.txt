@@ -1,0 +1,8 @@
+
+Servidor: ftp.pruebasit.com.ar
+Usuario: pruebasit@pruebasit.com.ar
+Clave: toul0cax0con
+Puerto: 21
+
+
+Pagina DE PRUEBAS:  www.pruebasit.com.ar

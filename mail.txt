@@ -1,0 +1,20 @@
+$destinatario  = "mail_destino@destino.com";
+
+// subject
+$asunto = "Asunto del mail";
+
+
+// cuerpo de email
+$cuerpo = "<div style=\"background-color:#ace2fa; width:550px; padding:15px; margin:auto; border:1px solid #008\">";   // esta línea genera un div para dar formato.
+
+$cuerpo .= "Este es texto del mensaje, el cuerpo del email, el contenido del email";  // <--- modificar este contenido con el contenido de tu email
+
+$cuerpo .= "</div>";  // está línea cierra el div
+
+
+// encabezados adicionales
+$headers  = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type: text/html; charset=utf-8" . "\r\n";  // los headers son necesarios para dar formato html
+
+// Enviar email con formato HTML (ver $headers)
+mail($destinatario, $asunto, $mensaje, $headers);
